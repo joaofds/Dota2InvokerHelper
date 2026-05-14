@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KeyforgeDota")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8529bbe509c1f45a5813eb1b4f6e7026d506f778")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4e959eb6a9112c595396b8d00946dda0cb24172")]
 [assembly: System.Reflection.AssemblyProductAttribute("KeyforgeDota")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KeyforgeDota")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

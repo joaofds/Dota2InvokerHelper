@@ -41,7 +41,12 @@ namespace KeyforgeDota
                 if (msg == WM_KEYDOWN || msg == WM_SYSKEYDOWN)
                 {
                     if (_pressedKeys.Add(vk))
+                    {
                         OnComboPressed?.Invoke(new HashSet<int>(_pressedKeys));
+                        // VK_PAUSE (0x13) não gera WM_KEYUP de forma confiável no hardware;
+                        // remover imediatamente para não contaminar combos subsequentes.
+                        if (vk == 0x13) _pressedKeys.Remove(vk);
+                    }
                 }
                 else if (msg == WM_KEYUP || msg == WM_SYSKEYUP)
                 {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bK08/vSeepw=",
+  "dgSpecHash": "ULSFlobAndE=",
   "success": true,
   "projectFilePath": "E:\\projetos\\cs\\KeyforgeDota\\KeyforgeDota.csproj",
   "expectedPackageFiles": [
@@ -33,5 +33,18 @@
     "C:\\Users\\Joao\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.9\\skiasharp.nativeassets.win32.2.88.9.nupkg.sha512",
     "C:\\Users\\Joao\\.nuget\\packages\\tmds.dbus.protocol\\0.21.2\\tmds.dbus.protocol.0.21.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "O pacote 'Tmds.DBus.Protocol' 0.21.2 tem uma alta vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-xrw6-gwf8-vvr9",
+      "projectPath": "E:\\projetos\\cs\\KeyforgeDota\\KeyforgeDota.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\projetos\\cs\\KeyforgeDota\\KeyforgeDota.csproj",
+      "libraryId": "Tmds.DBus.Protocol",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

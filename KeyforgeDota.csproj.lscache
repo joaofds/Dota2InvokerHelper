@@ -2,12 +2,10 @@ version=1
 
 # This file caches language service data to improve the performance of C# Dev Kit.
 # It is not intended for manual editing. It can safely be deleted and will be
-# regenerated automatically.
+# regenerated automatically. For more information, see https://aka.ms/lscache
 #
-# To exclude from version control, add *.lscache to your .gitignore file.
-#
-# To disable caching, add the following to your VS Code settings:
-#   "dotnet.projectsystem.enableLanguageServiceCache": false
+# To control where cache files are stored, use the following VS Code setting:
+#   "dotnet.projectsystem.cacheInProjectFolder": true
 
 [project]
 language=C#
@@ -73,39 +71,7 @@ Program.cs
 ShortcutConfigWindow.axaml.cs
 
 [metadataReferences]
-<NUGET>/
- avalonia.controls.colorpicker/11.3.11/lib/net8.0/Avalonia.Controls.ColorPicker.dll
- avalonia.controls.datagrid/11.3.11/lib/net8.0/Avalonia.Controls.DataGrid.dll
- avalonia.desktop/11.3.11/lib/net8.0/Avalonia.Desktop.dll
- avalonia.diagnostics/11.3.11/lib/net8.0/Avalonia.Diagnostics.dll
- avalonia.fonts.inter/11.3.11/lib/net8.0/Avalonia.Fonts.Inter.dll
- avalonia.freedesktop/11.3.11/lib/net8.0/Avalonia.FreeDesktop.dll
- avalonia.native/11.3.11/lib/net8.0/Avalonia.Native.dll
- avalonia.remote.protocol/11.3.11/lib/net8.0/Avalonia.Remote.Protocol.dll
- avalonia.skia/11.3.11/lib/net8.0/Avalonia.Skia.dll
- avalonia.themes.fluent/11.3.11/lib/net8.0/Avalonia.Themes.Fluent.dll
- avalonia.themes.simple/11.3.11/lib/net8.0/Avalonia.Themes.Simple.dll
- avalonia.win32/11.3.11/lib/net8.0/
-  Avalonia.Win32.Automation.dll
-  Avalonia.Win32.dll
- avalonia.x11/11.3.11/lib/net8.0/Avalonia.X11.dll
- avalonia/11.3.11/ref/net8.0/
-  Avalonia.Base.dll
-  Avalonia.Controls.dll
-  Avalonia.DesignerSupport.dll
-  Avalonia.Dialogs.dll
-  Avalonia.dll
-  Avalonia.Markup.dll
-  Avalonia.Markup.Xaml.dll
-  Avalonia.Metal.dll
-  Avalonia.MicroCom.dll
-  Avalonia.OpenGL.dll
-  Avalonia.Vulkan.dll
- harfbuzzsharp/8.3.1.1/lib/net8.0/HarfBuzzSharp.dll
- microcom.runtime/0.11.0/lib/net5.0/MicroCom.Runtime.dll
- skiasharp/2.88.9/lib/net6.0/SkiaSharp.dll
- tmds.dbus.protocol/0.21.2/lib/net8.0/Tmds.DBus.Protocol.dll
-C:/Program Files/dotnet/packs/Microsoft.NETCore.App.Ref/10.0.2/ref/net10.0/
+<DOTNET>/packs/Microsoft.NETCore.App.Ref/10.0.2/ref/net10.0/
  Microsoft.CSharp.dll
  Microsoft.VisualBasic.Core.dll
  Microsoft.VisualBasic.dll
@@ -273,24 +239,53 @@ C:/Program Files/dotnet/packs/Microsoft.NETCore.App.Ref/10.0.2/ref/net10.0/
  System.Xml.XPath.dll
  System.Xml.XPath.XDocument.dll
  WindowsBase.dll
+<NUGET>/
+ avalonia.controls.datagrid/11.3.11/lib/net8.0/Avalonia.Controls.DataGrid.dll
+ avalonia.desktop/11.3.11/lib/net8.0/Avalonia.Desktop.dll
+ avalonia.fonts.inter/11.3.11/lib/net8.0/Avalonia.Fonts.Inter.dll
+ avalonia.freedesktop/11.3.11/lib/net8.0/Avalonia.FreeDesktop.dll
+ avalonia.native/11.3.11/lib/net8.0/Avalonia.Native.dll
+ avalonia.remote.protocol/11.3.11/lib/net8.0/Avalonia.Remote.Protocol.dll
+ avalonia.skia/11.3.11/lib/net8.0/Avalonia.Skia.dll
+ avalonia.themes.fluent/11.3.11/lib/net8.0/Avalonia.Themes.Fluent.dll
+ avalonia.win32/11.3.11/lib/net8.0/
+  Avalonia.Win32.Automation.dll
+  Avalonia.Win32.dll
+ avalonia.x11/11.3.11/lib/net8.0/Avalonia.X11.dll
+ avalonia/11.3.11/ref/net8.0/
+  Avalonia.Base.dll
+  Avalonia.Controls.dll
+  Avalonia.DesignerSupport.dll
+  Avalonia.Dialogs.dll
+  Avalonia.dll
+  Avalonia.Markup.dll
+  Avalonia.Markup.Xaml.dll
+  Avalonia.Metal.dll
+  Avalonia.MicroCom.dll
+  Avalonia.OpenGL.dll
+  Avalonia.Vulkan.dll
+ harfbuzzsharp/8.3.1.1/lib/net8.0/HarfBuzzSharp.dll
+ microcom.runtime/0.11.0/lib/net5.0/MicroCom.Runtime.dll
+ skiasharp/2.88.9/lib/net6.0/SkiaSharp.dll
+ tmds.dbus.protocol/0.21.2/lib/net8.0/Tmds.DBus.Protocol.dll
 
 [analyzerReferences]
-<NUGET>/avalonia/11.3.11/analyzers/dotnet/cs/
- Avalonia.Analyzers.dll
- Avalonia.Generators.dll
-C:/Program Files/dotnet/packs/Microsoft.NETCore.App.Ref/10.0.2/analyzers/dotnet/cs/
+<DOTNET>/packs/Microsoft.NETCore.App.Ref/10.0.2/analyzers/dotnet/cs/
  Microsoft.Interop.ComInterfaceGenerator.dll
  Microsoft.Interop.JavaScript.JSImportGenerator.dll
  Microsoft.Interop.LibraryImportGenerator.dll
  Microsoft.Interop.SourceGeneration.dll
  System.Text.Json.SourceGeneration.dll
  System.Text.RegularExpressions.Generator.dll
-C:/Program Files/dotnet/sdk/10.0.102/Sdks/Microsoft.NET.Sdk/analyzers/
+<DOTNET>/sdk/10.0.102/Sdks/Microsoft.NET.Sdk/analyzers/
  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
  Microsoft.CodeAnalysis.NetAnalyzers.dll
+<NUGET>/avalonia/11.3.11/analyzers/dotnet/cs/
+ Avalonia.Analyzers.dll
+ Avalonia.Generators.dll
 
 [analyzerConfigFiles]
-C:/Program Files/dotnet/sdk/10.0.102/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
+<DOTNET>/sdk/10.0.102/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 obj/Debug/net10.0/KeyforgeDota.GeneratedMSBuildEditorConfig.editorconfig
 
 [additionalFiles]

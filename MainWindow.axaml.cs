@@ -64,7 +64,6 @@ public partial class MainWindow : Window
         {
             _isEnabled = !_isEnabled;
             SetStatus(_isEnabled ? "Atalhos ativados (Pause)" : "Atalhos desativados (Pause)", error: !_isEnabled);
-            pressedKeys.Clear(); // evita múltiplos toggles
             return;
         }
         if (!_isEnabled)
@@ -73,11 +72,8 @@ public partial class MainWindow : Window
         var ability = GetAbilityForCombo(combo);
         if (ability != null)
         {
-            Dispatcher.UIThread.Post(async () =>
-            {
-                SetStatus($"Combo detectado: {combo} → {ability}");
-                await DispararHabilidade(ability);
-            });
+            SetStatus($"Combo detectado: {combo} → {ability}");
+            _ = DispararHabilidade(ability);
         }
     }
 
