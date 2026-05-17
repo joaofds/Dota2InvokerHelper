@@ -27,6 +27,9 @@ public partial class MainWindow : Window
         AttachEvents();
         LoadConfigToUI();
 
+        if (AppConfig.LastLoadError != null)
+            SetStatus($"Config corrompida, usando padrões. Veja config_error.log", error: true);
+
         // Botão de configuração de atalhos
         this.FindControl<Button>("OpenShortcutConfigBtn").Click += OpenShortcutConfigBtn_Click;
 

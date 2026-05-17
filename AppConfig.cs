@@ -23,6 +23,8 @@ public class AppConfig
     [JsonIgnore]
     public static string ConfigPath => Path.Combine(AppContext.BaseDirectory, "config.json");
 
+    [JsonIgnore]
+    public static string? LastLoadError { get; private set; }
 
     public void Save()
     {
@@ -61,7 +63,13 @@ public class AppConfig
             }
             return config;
         }
-        catch { }
+        catch (Exception ex)
+        {
+            LastLoadError = ex.Message;
+            File.WriteAllText(
+                Path.Combine(AppContext.BaseDirectory, "config_error.log"),
+                $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Erro ao carregar config.json:\n{ex}");
+        }
         // fallback
         var fallback = new AppConfig();
         var habilidades2 = new[]
