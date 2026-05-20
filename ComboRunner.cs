@@ -130,13 +130,10 @@ namespace KeyforgeDota
             PostMessage(hWnd, WM_KEYUP, (IntPtr)vk, IntPtr.Zero);
         }
 
-        private int KeyToVirtualKey(string key)
+        private static int KeyToVirtualKey(string key)
         {
             if (string.IsNullOrEmpty(key)) return 0;
-            char c = char.ToLowerInvariant(key[0]);
-            if (c >= 'a' && c <= 'z') return c - 'a' + 0x41;
-            if (c >= '0' && c <= '9') return c - '0' + 0x30;
-            return 0;
+            return KeyMapper.TryGetVirtualKey(key, out int vk) ? vk : 0;
         }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]

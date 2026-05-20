@@ -61,10 +61,9 @@ Aplicativo desktop para automatizar combos do Invoker no Dota 2, com configuraç
   - Removidos `SendKeyToWindow`, `KeyToVirtualKey`, `PostMessage`, `WM_KEYDOWN/WM_KEYUP` de `MainWindow`.
   - Mantido apenas `FindWindow` / `FindWindowByTitle` (ainda necessários).
 
-- [ ] **`ComboRunner.KeyToVirtualKey` não suporta teclas especiais**
-  - Arquivo: `ComboRunner.cs:133-139`
-  - Só converte letras `a-z` e dígitos `0-9`. Teclas como `"space"`, `"f1"` configuradas pelo usuário retornam 0 e falham silenciosamente.
-  - Correção: integrar com `KeyMapper` corrigido.
+- [x] **`ComboRunner.KeyToVirtualKey` não suporta teclas especiais**
+  - `KeyMapper.cs` reescrito com mapeamento correto nome → VK (letras, números, space, f1-f12, modificadores).
+  - `ComboRunner.KeyToVirtualKey` delegado ao `KeyMapper.TryGetVirtualKey`.
 
 - [ ] **`AtualizarListaAtalhosSalvos` é método vazio ainda chamado**
   - Arquivo: `ShortcutConfigWindow.axaml.cs:85-88`
