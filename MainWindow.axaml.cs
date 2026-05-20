@@ -34,8 +34,15 @@ public partial class MainWindow : Window
         this.FindControl<Button>("OpenShortcutConfigBtn").Click += OpenShortcutConfigBtn_Click;
 
         // Inicia hook global de teclado (WinAPI)
-        _keyboardHook = new KeyboardHookWin();
-        _keyboardHook.OnComboPressed += KeyboardHook_OnComboPressed;
+        try
+        {
+            _keyboardHook = new KeyboardHookWin();
+            _keyboardHook.OnComboPressed += KeyboardHook_OnComboPressed;
+        }
+        catch (InvalidOperationException ex)
+        {
+            SetStatus($"Hook de teclado falhou: {ex.Message}", error: true);
+        }
     }
 
     private void OpenShortcutConfigBtn_Click(object? sender, RoutedEventArgs e)
@@ -46,8 +53,15 @@ public partial class MainWindow : Window
             BuildComboToAbilityMap();
             _comboRunner = new ComboRunner(Config);
             _keyboardHook?.Dispose();
-            _keyboardHook = new KeyboardHookWin();
-            _keyboardHook.OnComboPressed += KeyboardHook_OnComboPressed;
+            try
+            {
+                _keyboardHook = new KeyboardHookWin();
+                _keyboardHook.OnComboPressed += KeyboardHook_OnComboPressed;
+            }
+            catch (InvalidOperationException ex)
+            {
+                SetStatus($"Hook de teclado falhou: {ex.Message}", error: true);
+            }
         };
         win.ShowDialog(this);
     }

@@ -16,6 +16,11 @@ namespace KeyforgeDota
         {
             _proc = HookCallback;
             _hookID = SetHook(_proc);
+            if (_hookID == IntPtr.Zero)
+            {
+                int err = Marshal.GetLastWin32Error();
+                throw new InvalidOperationException($"Falha ao instalar hook de teclado (Win32 erro {err}).");
+            }
         }
 
         public void Dispose()

@@ -45,7 +45,7 @@ Aplicativo desktop para automatizar combos do Invoker no Dota 2, com configuraç
   - Problema: `WexKeyBox`, `ExortKeyBox` e `InvokeKeyBox` registram `LostFocus += SaveConfigFromUI` duas vezes cada, causando duplo salvamento.
   - Correção: remover as três linhas duplicadas (179, 180, 181).
 
-- [ ] **`KeyboardHookWin` não verifica se o hook foi instalado com sucesso**
+- [x] **`KeyboardHookWin` não verifica se o hook foi instalado com sucesso**
   - Arquivo: `KeyboardHookWin.cs:16-18`
   - Problema: se `SetWindowsHookEx` falhar, `_hookID` fica `IntPtr.Zero` e nenhum hotkey funciona — sem alerta ao usuário.
   - Correção: verificar retorno de `SetWindowsHookEx` e lançar exceção ou disparar evento de erro.
