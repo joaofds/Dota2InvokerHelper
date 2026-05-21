@@ -2,7 +2,7 @@ using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 
-namespace KeyforgeDota;
+namespace Dota2InvokerHelper;
 
 public partial class App : Application
 {

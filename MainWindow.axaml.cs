@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Avalonia.Threading;
 using System.Collections.Generic;
 
-namespace KeyforgeDota;
+namespace Dota2InvokerHelper;
 
 
 public partial class MainWindow : Window

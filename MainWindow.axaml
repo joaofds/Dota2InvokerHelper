@@ -3,12 +3,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="520" Width="480" Height="520" MinWidth="480" MinHeight="520" MaxWidth="480" MaxHeight="520"
-        x:Class="KeyforgeDota.MainWindow"
-        Title="Keyforge Invoker Helper">
+        x:Class="Dota2InvokerHelper.MainWindow"
+        Title="Dota2 Invoker Helper">
     <Border Background="#23272F" CornerRadius="12" Padding="24">
         <Grid>
             <StackPanel Spacing="18">
-            <TextBlock Text="Keyforge Invoker Helper" FontSize="28" Foreground="#F5F6FA" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBlock Text="Dota2 Invoker Helper" FontSize="28" Foreground="#F5F6FA" FontWeight="Bold" HorizontalAlignment="Center"/>
             <TextBlock Text="Janela de destino (nome exato):" Foreground="#B0B3B8"/>
             <TextBox Name="WindowNameBox" Watermark="Ex: Dota 2" Background="#2C2F36" Foreground="#F5F6FA"/>
 

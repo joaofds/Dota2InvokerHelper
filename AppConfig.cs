@@ -5,7 +5,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.IO;
 
-namespace KeyforgeDota;
+namespace Dota2InvokerHelper;
 
 public class AppConfig
 {

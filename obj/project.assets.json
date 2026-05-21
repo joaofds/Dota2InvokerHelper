@@ -1374,11 +1374,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\projetos\\cs\\KeyforgeDota\\KeyforgeDota.csproj",
-      "projectName": "KeyforgeDota",
-      "projectPath": "E:\\projetos\\cs\\KeyforgeDota\\KeyforgeDota.csproj",
+      "projectUniqueName": "E:\\projetos\\cs\\Dota2InvokerHelper\\Dota2InvokerHelper.csproj",
+      "projectName": "Dota2InvokerHelper",
+      "projectPath": "E:\\projetos\\cs\\Dota2InvokerHelper\\Dota2InvokerHelper.csproj",
       "packagesPath": "C:\\Users\\Joao\\.nuget\\packages\\",
-      "outputPath": "E:\\projetos\\cs\\KeyforgeDota\\obj\\",
+      "outputPath": "E:\\projetos\\cs\\Dota2InvokerHelper\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Joao\\AppData\\Roaming\\NuGet\\NuGet.Config",

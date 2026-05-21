@@ -1,5 +1,5 @@
-# KeyforgeDota
-Keyforge Invoker Macro - O app permite configurar atalhos personalizados, capturar hotkeys e enviar comandos de teclado de forma prática, otimizando a experiência durante partidas.
+# Dota2InvokerHelper
+Dota2 Invoker Helper - O app permite configurar atalhos personalizados, capturar hotkeys e enviar comandos de teclado de forma prática, otimizando a experiência durante partidas.
 
 ## Funcionalidades
 - Mapeamento de teclas personalizadas (até dois atalhos por habilidade).
@@ -15,11 +15,11 @@ Keyforge Invoker Macro - O app permite configurar atalhos personalizados, captur
 
 Você pode baixar o pacote do aplicativo aqui:
 
-[Download dota2_invoker_helper.rar](https://github.com/joaofds/KeyforgeDota/raw/main/download/dota2_invoker_helper.rar)
+[Download dota2_invoker_helper.rar](https://github.com/joaofds/Dota2InvokerHelper/raw/main/download/dota2_invoker_helper.rar)
 
 ## Configuração
 
-O KeyforgeDota utiliza um arquivo chamado `config.json` para definir as teclas de orbes, invocação e as combinações de atalhos para cada habilidade do Invoker. Você pode personalizar as teclas via interface gráfica (botão **Configurar Atalhos**) ou editando o arquivo diretamente.
+O Dota2InvokerHelper utiliza um arquivo chamado `config.json` para definir as teclas de orbes, invocação e as combinações de atalhos para cada habilidade do Invoker. Você pode personalizar as teclas via interface gráfica (botão **Configurar Atalhos**) ou editando o arquivo diretamente.
 
 | Campo | Descrição | Padrão |
 |-------|-----------|--------|

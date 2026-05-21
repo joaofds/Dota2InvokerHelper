@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace KeyforgeDota
+namespace Dota2InvokerHelper
 {
     public class ComboRunner
     {

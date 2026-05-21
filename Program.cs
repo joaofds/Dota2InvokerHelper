@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace KeyforgeDota;
+namespace Dota2InvokerHelper;
 
 class Program
 {

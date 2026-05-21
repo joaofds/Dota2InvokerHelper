@@ -4,7 +4,7 @@ using Avalonia.Input;
 using Avalonia.Markup.Xaml;
 using System.Collections.Generic;
 
-namespace KeyforgeDota;
+namespace Dota2InvokerHelper;
 
 public partial class HotkeyCaptureBox : UserControl
 {

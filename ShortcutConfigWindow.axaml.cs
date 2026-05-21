@@ -5,7 +5,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 
-namespace KeyforgeDota;
+namespace Dota2InvokerHelper;
 
 public partial class ShortcutConfigWindow : Window
 {

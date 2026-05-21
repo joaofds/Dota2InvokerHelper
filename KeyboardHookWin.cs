@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Collections.Generic;
 
-namespace KeyforgeDota
+namespace Dota2InvokerHelper
 {
     public class KeyboardHookWin : IDisposable
     {

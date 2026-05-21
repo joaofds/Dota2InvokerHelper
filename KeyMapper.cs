@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace KeyforgeDota;
+namespace Dota2InvokerHelper;
 
 public static class KeyMapper
 {

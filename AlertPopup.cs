@@ -4,7 +4,7 @@ using Avalonia.Threading;
 using System;
 using System.Threading.Tasks;
 
-namespace KeyforgeDota;
+namespace Dota2InvokerHelper;
 
 public static class AlertPopup
 {
